@@ -1,2 +1,2 @@
-## angularjs
-AngularJS project
+## Vanilla JS
+JS Stuff
