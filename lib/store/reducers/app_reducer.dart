@@ -1,5 +1,5 @@
-import 'package:bewell/store/models/app_state.dart';
+// import 'package:bewell/store/models/app_state.dart';
 
-AppState appReducer(AppState state, dynamic action) {
-  return AppState();
-}
+// AppState appReducer(AppState state, dynamic action) {
+//   return AppState();
+// }
