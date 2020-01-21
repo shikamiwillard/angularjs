@@ -1,4 +1,4 @@
-package com.example.flutter_container;
+package com.example.mealtime;
 
 import androidx.annotation.NonNull;
 import io.flutter.embedding.android.FlutterActivity;
