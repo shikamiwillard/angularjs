@@ -5,6 +5,15 @@ void main() => runApp(MealApp());
 class MealApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return null;
+    return Material(
+      child: MaterialApp(
+        title: 'Meal App',
+        home: Scaffold(
+          body: Container(
+            child: Text('TODO: Meals Listview'),
+          ),
+        ),
+      ),
+    );
   }
 }
