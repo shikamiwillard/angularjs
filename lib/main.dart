@@ -1,3 +1,4 @@
+import 'features/meals/pages/homepage.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MealApp());
@@ -5,15 +6,10 @@ void main() => runApp(MealApp());
 class MealApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Material(
-      child: MaterialApp(
-        title: 'Meal App',
-        home: Scaffold(
-          body: Container(
-            child: Text('TODO: Meals Listview'),
-          ),
-        ),
-      ),
+    return MaterialApp(
+      title: 'Meal Time',
+      debugShowCheckedModeBanner: false,
+      home: HomePage(),
     );
   }
 }
