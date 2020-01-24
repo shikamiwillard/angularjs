@@ -1,7 +1,12 @@
-import 'package:redux/redux.dart';
-// import 'package:lib/store/models/meal_model.dart';
+import 'package:flutter/foundation.dart';
+import 'package:mealtime/store/models/meal_model.dart';
 
-// final Store<AppState> store = Store<AppState>(
-//   appReducer,
-//   initialState: AppState(),
-// );
+class AppState{
+  final List<MealModel> mealmodel;
+
+  AppState({
+    @required this.mealmodel,
+  });
+
+  AppState.initialState() : mealmodel = List.unmodifiable(<MealModel>[]);
+}
