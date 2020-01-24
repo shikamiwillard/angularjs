@@ -9,7 +9,9 @@ class MealApp extends StatelessWidget {
     return MaterialApp(
       title: 'Meal Time',
       debugShowCheckedModeBanner: false,
-      home: HomePage(),
+      home: SafeArea(
+        child: HomePage(),
+      )
     );
   }
 }
