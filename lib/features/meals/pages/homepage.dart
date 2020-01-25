@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mealtime/features/meals/pages/add_meal.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -19,13 +20,14 @@ class HomePage extends StatelessWidget {
               )
             ),
           // getOurMeals()
-          
           ],
          )
       ),
       floatingActionButton: FloatingActionButton(
             onPressed: (){
-
+              Navigator.push(context,
+                MaterialPageRoute(builder: (context) => AddMeals()),
+              );
             },
             child: Icon(Icons.add),
 
@@ -35,7 +37,6 @@ class HomePage extends StatelessWidget {
 
   Widget AppTitle(){
     var mealAppTitle = Container(
-      // margin: EdgeInsets.only(top: 20.0, left: 20.0),
       child: Text('Meals of the week',
         style: TextStyle(color: Colors.black, fontSize: 30.0, fontFamily: 'FjallaOne',fontWeight: FontWeight.w400),
         ));
@@ -44,7 +45,6 @@ class HomePage extends StatelessWidget {
 
   Widget SubTitle(){
     var mealAppSubTitle = Container(
-      // margin: EdgeInsets.only(top: 5.0, left: 20.0),
       child: Text('Your meal plan for this week',
         style: TextStyle(color: Colors.grey, fontSize: 18.0, fontFamily: 'Sarabun',fontWeight: FontWeight.w400),
         ));
